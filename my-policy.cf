@@ -1,0 +1,6 @@
+bundle agent my_test{
+   files:
+    any::
+     "/tmp/hello-world"
+      create => "true";
+}

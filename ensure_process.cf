@@ -1,0 +1,11 @@
+bundle agent ensure
+{
+   processes:
+    "/usr/sbin/ntpd"
+     restart_class => "start_ntpd";
+
+   commands:
+    start_ntpd::
+     "/etc/init.d/ntp start";
+}
+

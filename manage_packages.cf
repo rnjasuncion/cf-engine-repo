@@ -1,0 +1,12 @@
+bundle agent manage_packages
+{
+   packages:
+   "openssl"
+    policy => "present",
+    version => "latest",
+    package_module => yum;
+
+   "telnet"
+    policy => "absent",
+    package_module => yum;
+}
